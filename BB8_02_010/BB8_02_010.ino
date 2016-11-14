@@ -1,11 +1,11 @@
 //Droid
 
-#include <Adafruit_NeoPixel.h>
-#include <Wire.h>
-#include <Adafruit_Sensor.h>
-#include <Adafruit_BNO055.h>
-#include <utility/imumaths.h>
-#include <PID_v1.h>  //PID loop from http://playground.arduino.cc/Code/PIDLibrary
+#include "Adafruit_NeoPixel.h"  //The quotes around the file name force the compiler to look in include directories and the current directory.
+#include <Wire.h>  //The carrots around the file name tell the compiler to only look for the file in the include directories
+#include "Adafruit_Sensor.h"
+#include "Adafruit_BNO055.h"
+#include "imumaths.h"
+#include "PID_v1.h"  //PID loop from http://playground.arduino.cc/Code/PIDLibrary
 #include <Servo.h>
 
 #define TCAADDR 0x70
